@@ -43,7 +43,7 @@ void setup(){
     //——————————————————————————获取目录——————————————————————————————————//
     
     String folder_name = "/tachi-maker";
-    Dir dir = SPIFFS.openDIR(folder_name);  //建立目录对象
+    Dir dir = SPIFFS.openDir(folder_name);  //建立目录对象
     
     while(dir.next()){          //检查是否还有下一个文件
         Serial.println(dir.fileName()); //  输出文件名
